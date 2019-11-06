@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_legislator.xml"
+    app:startDestination="@id/initialFragment">
+
+    <fragment
+        android:id="@+id/initialFragment"
+        android:name="com.example.fragmenttag.InitialFragment"
+        android:label="Initial Fragment"
+        tools:layout="@layout/initial_fragment">
+        <action
+            android:id="@+id/action_initialFragment_to_destinationFragment"
+            app:destination="@id/destinationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/destinationFragment"
+        android:name="com.example.fragmenttag.DestinationFragment"
+        android:label="Destination Fragment"
+        tools:layout="@layout/destination_fragment" />
+
+</navigation>
